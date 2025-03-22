@@ -32,6 +32,7 @@
                 <input type="password" name="password" class="text" autocomplete="off" id="password">
                 <i class="fas fa-eye-slash" style="cursor: pointer" id="verPassword" onclick="mostrarPassword()"></i>
             </div>
+            <?php echo bcrypt('admin#2024') ?>
             <button type="submit" class="boton">INGRESAR</button>
         </form>
     </div>
