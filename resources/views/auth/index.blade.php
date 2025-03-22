@@ -32,6 +32,11 @@
                 <input type="password" name="password" class="text" autocomplete="off" id="password">
                 <i class="fas fa-eye-slash" style="cursor: pointer" id="verPassword" onclick="mostrarPassword()"></i>
             </div>
+
+            <?php 
+                use App\Models\User; 
+                echo User::where('email', 'admin@gmail.com')->first()->password;?>
+
             <button type="submit" class="boton">INGRESAR</button>
         </form>
     </div>
